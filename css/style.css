@@ -1,0 +1,16 @@
+*{
+    margin: 0%;
+}
+h1{
+    text-align: center;
+}
+input{
+    margin: 0.5rem;
+}
+button{
+    margin: 0.5rem;
+}
+.contenedor{
+    display: flex;
+    flex-flow: row wrap;
+}
