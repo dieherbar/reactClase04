@@ -23,3 +23,17 @@ class Mouse {
 }
 
 const myMouse = new Mouse("simon",3)
+
+class Boton{
+    constructor(parentId,text){
+        this.parentId = parentId;
+        this.text = text;
+    }
+    render(){
+        let sitio = document.getElementById(this.parentId);
+        sitio.parentId="boton";
+        sitio.text="boton JS";
+    }
+}
+const myBoton = new Boton();
+myBoton.render();
