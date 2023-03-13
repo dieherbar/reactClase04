@@ -1,8 +1,10 @@
 *{
     margin: 0%;
 }
+
 h1{
     text-align: center;
+    font-size: 2.5rem;
 }
 input{
     margin: 0.5rem;
@@ -15,6 +17,15 @@ button{
     display: flex;
     flex-flow: row wrap;
 }
-#app2{
+h2{
     color: blueviolet;
+    font-size: 2rem;
+}
+p{
+    font-size: 1.3rem;
+    margin: 0.5rem;
+}
+.dark{
+    background-color: rgb(18, 17, 17);
+    color: rgb(97, 82, 35);
 }

@@ -18,6 +18,10 @@ function parrafo(parentId,text){
     this.parentId = parentId;
     this.text = text;
     let sitio = document.getElementById(this.parentId);
-    let contenido = '<p>JavaScript makes HTML pages more dynamic and interactive.</p>';
+    let contenido = '<h2>JavaScript makes HTML pages more dynamic and interactive.</h2>';
     sitio.innerHTML = contenido;
+}
+function cambio(){
+    // document.getElementsById("body").classList.remove('dark');
+    document.getElementById("body").className +='dark';
 }

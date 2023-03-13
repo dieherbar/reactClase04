@@ -61,10 +61,21 @@ class Boton {
     }
     render() {
         let sitio = document.getElementById(this.parentId);
-        let botonHtml = '<button onclick="parrafo("app2")">Boton JS</button>';
+        let botonHtml = '<button onclick="cambio()">Boton JS</button>';
         sitio.innerHTML = botonHtml;
         // sitio.parentId="boton";
         // sitio.text="boton JS";
+    }
+}
+class Texto {
+    constructor(parentId, text) {
+        this.parentId = parentId;
+        this.text = text;
+    }
+    render() {
+        let sitio = document.getElementById(this.parentId);
+        let textoHtml = "<p>Creado por JS</p><p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum vel laboriosam dolore voluptatibus voluptas         adipisci fugiat, assumenda atque ad voluptatum quaerat placeat veritatis modi optio eius. Neque eligendi         quia eius!         Xorro, delectus dignissimos. Eos quaerat hic id deleniti impedit quis, dolores excepturi officia, magni         autem modi quae possimus asperiores, perspiciatis laudantium corrupti! Inventore sit perspiciatis nam ea,         autem laudantium et!         Neque magni enim aspernatur asperiores dolorum omnis sapiente, deleniti adipisci eligendi nulla consequuntur         amet, ducimus dolor accusantium aut, sunt dolore qui error beatae id eum debitis labore cumque assumenda?</p>";
+        sitio.innerHTML = textoHtml;
     }
 }
 // function botonCancelar(parentId, text) {
@@ -81,6 +92,7 @@ otroInput.render();
 
 const myBoton = new Boton("boton");
 myBoton.render();
-
 // const cancelar = new botonCancelar("botonC", "Cancelar JS");
 
+const elTexto = new Texto("texto");
+elTexto.render();
