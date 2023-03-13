@@ -5,8 +5,8 @@ let myApp = document.getElementById("app");
 myApp.innerHTML = "Estoy modificando el palceholder...";
 
 
-const myDog ={
-    name:"pichicho"
+const myDog = {
+    name: "pichicho"
 }
 const myCat = {
     "name": "sasha"
@@ -22,51 +22,65 @@ console.log(myCat);
 //     }
 // }
 
-function Mouse(name,age){
+function Mouse(name, age) {
     this.name = name;
     this.age = age;
 }
 
-const myMouse = new Mouse("simon",3);
+const myMouse = new Mouse("simon", 3);
 console.log(myMouse);
 
-class Input{
-    constructor(parentId,text){
+class Input {
+    constructor(parentId, text) {
         this.parentId = parentId;
         this.text = text;
     }
-    render(){
+    render() {
         let sitio = document.getElementById(this.parentId);
-        let inputHtml ="<input type='email'  id='email' placeholder='Ingrese email'>";
+        let inputHtml = "<input type='email'  id='email' placeholder='Ingrese email'>";
         sitio.innerHTML = inputHtml;
     }
 }
 
-class Boton{
-    constructor(parentId,text){
+class InputPass {
+    constructor(parentId, text) {
         this.parentId = parentId;
         this.text = text;
     }
-    render(){
+    render() {
         let sitio = document.getElementById(this.parentId);
-        let botonHtml ="<button>Boton JS</button>";
+        let inputHtml2 = "<input type='password'  id='pass' name='pass' placeholder='Contraseña'>";
+        sitio.innerHTML = inputHtml2;
+    }
+}
+
+class Boton {
+    constructor(parentId, text) {
+        this.parentId = parentId;
+        this.text = text;
+    }
+    render() {
+        let sitio = document.getElementById(this.parentId);
+        let botonHtml = '<button onclick="parrafo("app2")">Boton JS</button>';
         sitio.innerHTML = botonHtml;
         // sitio.parentId="boton";
         // sitio.text="boton JS";
     }
 }
-function botonCancelar(parentId,text){
-    this.parentId = parentId;
-    this.text = text;
-    let sitio = document.getElementById(this.parentId);
-    let botonHtml ="<button>Cancelar JS</button>";
-    sitio.innerHTML = botonHtml;    
-}
-
+// function botonCancelar(parentId, text) {
+//     this.parentId = parentId;
+//     this.text = text;
+//     let sitio = document.getElementById(this.parentId);
+//     let botonHtml = '<button type="reset" onclick="limpiar()">Cancelar JS</button>';
+//     sitio.innerHTML = botonHtml;
+// }
 const unInput = new Input("input");
 unInput.render();
+const otroInput = new InputPass("input2");
+otroInput.render();
 
 const myBoton = new Boton("boton");
 myBoton.render();
 
-const cancelar = new botonCancelar("botonC","Cancelar JS");
+// const cancelar = new botonCancelar("botonC", "Cancelar JS");
+

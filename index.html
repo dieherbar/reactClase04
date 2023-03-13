@@ -14,13 +14,20 @@
     <div>
         <h1>Elementos creados por JS</h1>
     </div>
+    <div><h2 id="app2"></h2></div>
     <div class="contenedor">
         <div id="input"></div>
+        <div id="input2"></div>
         <div id="boton"></div>
         <div id="botonC"></div>
+        <div>
+            <!-- <input type="email" name="correo" id="correo"> -->
+            <button type="reset" onclick="botonCancelar('botonC')">Revelar Cancelar JS</button>
+        </div>
     </div>
-
+    <button onclick="parrafo('app2')">Revelar texto</button>
     <script type="module" src="js/app.js"></script>
+    <script src="js/funciones.js"></script>
 </body>
 
 </html>
